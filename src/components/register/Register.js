@@ -23,7 +23,7 @@ class Register extends React.Component {
 
     //To submit and send to backend email and password
     onSubmitSignIn = () => {
-        fetch('http://localhost:3000/register', {
+        fetch('https://floating-lowlands-03471.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
